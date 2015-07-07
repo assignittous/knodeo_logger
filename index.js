@@ -43,9 +43,13 @@ exports.Logger = {
     return this.append(chalk.bgBlue.white(" EXEC "), msg);
   },
   stub: function(msg) {
-    return this.append(chalk.bgRed.black(" STUB "), msg);
+    return this.append(chalk.bgWhite.black(" STUB "), msg);
   },
   todo: function(msg) {
-    return this.append(chalk.bgRed.black(" TODO "), msg);
+    return this.append(chalk.bgYellow.black(" TODO "), msg);
+  },
+  sql: function(msg) {
+    this.append(chalk.bgMagenta.black(" SQL "), "");
+    return console.log(msg);
   }
 }.init();

@@ -19,3 +19,5 @@ logger.exec("This is an exec message");
 logger.stub("This is a stub message");
 
 logger.todo("This is a todo message");
+
+logger.sql("This is a sql message");

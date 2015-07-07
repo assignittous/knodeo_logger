@@ -30,8 +30,11 @@ exports.Logger = {
   exec: (msg)->
     @append chalk.bgBlue.white(" EXEC "), msg
   stub: (msg)->
-    @append chalk.bgRed.black(" STUB "), msg
+    @append chalk.bgWhite.black(" STUB "), msg
   todo: (msg)->
-    @append chalk.bgRed.black(" TODO "), msg  
+    @append chalk.bgYellow.black(" TODO "), msg  
+  sql: (msg)->
+    @append chalk.bgMagenta.black(" SQL "), ""  
+    console.log msg
 
 }.init()
