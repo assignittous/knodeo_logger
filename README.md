@@ -4,6 +4,10 @@ Simple console logger used in Assign It To Us's knodeo products.
 
 Color coding using `chalk`
 
+## Important Note
+
+This library has been deprecated in favor of aitutils (https://github.com/assignittous/aitutils)
+
 # Install
 
 Add it to your project:
